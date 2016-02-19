@@ -169,7 +169,7 @@ apache:
     vhosts:
         av_ths0bozots2z:
             servername: local.examples-sf3
-            docroot: /var/www/examples-sf3
+            docroot: /var/www/examples-sf3/web
             port: '80'
             setenv:
                 - 'APP_ENV dev'
@@ -183,7 +183,7 @@ apache:
             ssl_cipher: ''
             directories:
                 avd_mamnnopkvjkf:
-                    path: /var/www/examples-sf3
+                    path: /var/www/examples-sf3/web
                     options:
                         - Indexes
                         - FollowSymlinks
@@ -193,6 +193,7 @@ apache:
                     require:
                         - 'all granted'
                     custom_fragment: ''
+                    directoryindex: app_dev.php
                     files_match:
                         avdfm_jf7fv8a2k1zp:
                             path: \.php$
