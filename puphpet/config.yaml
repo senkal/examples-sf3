@@ -173,6 +173,7 @@ apache:
             port: '80'
             setenv:
                 - 'APP_ENV dev'
+            rewrite_rule: '^(.*)$ /app_dev.php [QSA,L]'
             custom_fragment: ''
             ssl: '0'
             ssl_cert: ''
